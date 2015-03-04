@@ -1,0 +1,13 @@
+{
+	"_comment1" : "Any long-format command line argument ",
+	"_comment2" : "may be used in this JSON configuration file",
+
+	"url" : "http://ziftr.suprnova.cc:9991/",
+	"user" : "user.workername",
+	"pass" : "workerpass",
+
+	"algo" : "ziftr",
+	"threads" : "4",
+
+	"quiet" : true
+}
