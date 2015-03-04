@@ -749,7 +749,7 @@ static void *miner_thread(void *userdata)
 				continue;
 			}
 		}
-		if (memcmp(work.data, g_work.data, 76)) {
+		if (memcmp(work.data + 1, g_work.data + 1, 72)) {
 			memcpy(&work, &g_work, sizeof(struct work));
 			work.data[19] = 0xffffffffU / opt_n_threads * thr_id;
 		} else
